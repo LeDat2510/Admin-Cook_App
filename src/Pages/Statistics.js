@@ -123,107 +123,6 @@ const Statistics = () => {
         return count;
     };
 
-    /*
-      const CountApproveData = async (userIds) => {
-  const userRef = collection(db, 'ApproveFoods');
-  const blogRef = collection(db, 'ApproveBlogs');
-  const count = {};
-
-  const foodPromises = userIds.map((userID) => {
-    return new Promise((resolve) => {
-      const unsubscribe = onSnapshot(
-        query(userRef, where('id_user', '==', userID)),
-        (snapshot) => {
-          const foodCount = snapshot.size;
-          resolve({ userID, foodCount });
-        }
-      );
-
-      return unsubscribe;
-    });
-  });
-
-  const blogPromises = userIds.map((userID) => {
-    return new Promise((resolve) => {
-      const unsubscribe = onSnapshot(
-        query(blogRef, where('id_user', '==', userID)),
-        (snapshot) => {
-          const blogCount = snapshot.size;
-          resolve({ userID, blogCount });
-        }
-      );
-
-      return unsubscribe;
-    });
-  });
-
-  const foodResults = await Promise.all(foodPromises);
-  const blogResults = await Promise.all(blogPromises);
-
-  for (const { userID, foodCount } of foodResults) {
-    count[userID] = foodCount;
-  }
-
-  for (const { userID, blogCount } of blogResults) {
-    if (count[userID]) {
-      count[userID] += blogCount;
-    } else {
-      count[userID] = blogCount;
-    }
-  }
-
-  return count;
-};
-    */
-    /*
-    const CountApproveData = async (userIds) => {
-        const userRef = collection(db, 'ApproveFoods');
-        const blogRef = collection(db, 'ApproveBlogs');
-        const count = {};
-      
-        for (const userID of userIds) {
-          const foodSnapshot = await getDocs(query(userRef, where('id_user', '==', userID)));
-          const blogSnapshot = await getDocs(query(blogRef, where('id_user', '==', userID)));
-      
-          const foodCount = foodSnapshot.size;
-          const blogCount = blogSnapshot.size;
-      
-          count[userID] = foodCount + blogCount;
-        }
-      
-        return count;
-      };
-
-      const CountNotApproveData = async (userIds) => {
-        const userRef = collection(db, 'NotApproveFoods');
-        const blogRef = collection(db, 'NotApproveBlogs');
-        const count = {};
-      
-        for (const userID of userIds) {
-          const foodSnapshot = await getDocs(query(userRef, where('id_user', '==', userID)));
-          const blogSnapshot = await getDocs(query(blogRef, where('id_user', '==', userID)));
-      
-          const foodCount = foodSnapshot.size;
-          const blogCount = blogSnapshot.size;
-      
-          count[userID] = foodCount + blogCount;
-        }
-      
-        return count;
-      };
-*/
-
-    /*
-    const getAllUsers = () => {
-        const querySnapshot = onSnapshot(query(collection(db, "Users"), where('role', '==', true)),
-            async (snapShot) => {
-                const users = snapShot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-                setUsers(users);
-                setCurrentPage(1);
-            });
-        return querySnapshot;
-    }*/
-
     const prePage = () => {
         if (currentPage !== 1) {
             setCurrentPage(currentPage - 1);
@@ -322,8 +221,6 @@ const Statistics = () => {
             fetchData();
         };
     }, [])
-
-    console.log(recipesMonthlyData)
 
     return (
         <>
@@ -473,7 +370,6 @@ const Statistics = () => {
                                                 <th scope="col" className='text-center'>Email</th>
                                                 <th scope="col" className='text-center'>Số bài đã duyệt</th>
                                                 <th scope="col" className='text-center'>Số bài không duyệt</th>
-                                                <th scope="col" className='text-center'>Chức năng</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -489,7 +385,6 @@ const Statistics = () => {
                                                     <td className='text-center'>{user.email}</td>
                                                     <td className='text-center'>{totalApprovePost[user.id]}</td>
                                                     <td className='text-center'>{totalNotApprovePost[user.id]}</td>
-                                                    <td className='text-center'><button class="btn btn-success mr-2">Chi tiết</button></td>
                                                 </tr>
                                             ))}
                                         </tbody>

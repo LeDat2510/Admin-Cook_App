@@ -15,7 +15,7 @@ const Login = () => {
     const getUserDataFromFirestore = async (documentId) => {
         try {
             const usersCollectionRef = collection(db, 'Users');
-            const q = query(usersCollectionRef, where('__name__', '==', documentId)); // '__name__' là trường đặc biệt trong Firestore đại diện cho ID của tài liệu
+            const q = query(usersCollectionRef, where('__name__', '==', documentId)); 
 
             const querySnapshot = await getDocs(q);
             const userData = [];
@@ -25,7 +25,7 @@ const Login = () => {
             });
 
             if (userData.length > 0) {
-                return userData[0]; // Trả về tài liệu đầu tiên (giả sử chỉ có một tài liệu khớp)
+                return userData[0]; 
             } else {
                 console.log('Không tìm thấy thông tin người dùng trong Firestore');
                 return null;
@@ -44,12 +44,11 @@ const Login = () => {
                 .then((userCredential) => {
                     const uid = userCredential.user.uid;
 
-                    // Lấy dữ liệu người dùng từ Firestore
                     getUserDataFromFirestore(uid)
                         .then((userData) => {
                             const userDataWithId = { uid, ...userData };
                             console.log(userDataWithId);
-                            saveUserDataToLocalStorage(userDataWithId); // Lưu trữ dữ liệu người dùng vào Local Storage
+                            saveUserDataToLocalStorage(userDataWithId); 
                             localStorage.setItem('isLoggedIn', 'true');
 
                             if (rememberMe) {
@@ -95,10 +94,10 @@ const Login = () => {
         <div className="auth-wrapper">
             <div className="auth-inner">
                 <form onSubmit={signIn}>
-                    <h3>Sign In</h3>
+                    <h3>Đăng nhập</h3>
 
                     <div className="mb-3">
-                        <label>Email address</label>
+                        <label>Email</label>
                         <input
                             type="email"
                             className="form-control"
@@ -109,7 +108,7 @@ const Login = () => {
                     </div>
 
                     <div className="mb-3">
-                        <label>Password</label>
+                        <label>Mật khẩu</label>
                         <input
                             type="password"
                             className="form-control"
@@ -136,16 +135,17 @@ const Login = () => {
 
                     <div className="d-grid">
                         <button type="submit" className="btn btn-primary col-md-12">
-                            Submit
+                            Đăng nhập
                         </button>
                     </div>
-                    <p className="forgot-password text-right">
-                        <p>Don't you have account ? <Link to='/signup'>Sign Up</Link></p>
-                    </p>
                 </form>
             </div>
         </div>
     )
 }
+/*
+<p className="forgot-password text-right">
+                        <p>Don't you have account ? <Link to='/signup'>Sign Up</Link></p>
+                    </p>*/
 
 export default Login

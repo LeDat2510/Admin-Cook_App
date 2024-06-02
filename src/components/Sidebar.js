@@ -20,43 +20,43 @@ function Sidebar() {
             <li className={`nav-item ${activeLink === 0 ? 'active' : ''}`}>
               <Link to='/statistics'>
                 <i className="la la-bar-chart" />
-                Statistics
+                Thống kê
               </Link>
             </li>
             <li className={`nav-item ${activeLink === 1 ? 'active' : ''}`}>
               <Link to='/manageuser'>
                 <i className="la la-users" />
-                Manage User
+                Quản lý người dùng
               </Link>
             </li>
             <li className={`nav-item ${activeLink === 2 ? 'active' : ''}`}>
               <Link to='/managefood'>
                 <i className="la la-apple" />
-                <p>Manage Food</p>
+                <p>Quản lý công thức</p>
               </Link>
             </li>
             <li className={`nav-item ${activeLink === 3 ? 'active' : ''}`}>
               <Link to='/manageblog'>
                 <i className="la la-pencil-square" />
-                <p>Manage Blog</p>
+                <p>Quản lý bài blog</p>
               </Link>
             </li>
             <li className={`nav-item ${activeLink === 4 ? 'active' : ''}`}>
               <Link to='/managetypeoffood'>
                 <i className="la la-list" />
-                <p>Manage Type Of Food</p>
+                <p>Quản lý loại món</p>
               </Link>
             </li>
             <li className={`nav-item ${activeLink === 5 ? 'active' : ''}`}>
               <Link to='/approvefood'>
                 <i className="la la-check-circle" />
-                <p>Approve Food</p>
+                <p>Duyệt món ăn</p>
               </Link>
             </li>
             <li className={`nav-item ${activeLink === 6 ? 'active' : ''}`} >
               <Link to='/approveblog'>
                 <i className="la la-check-square" />
-                <p>Approve Blog</p>
+                <p>Duyệt bài blog</p>
               </Link>
             </li>
           </ul>
