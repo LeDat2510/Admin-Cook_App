@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Giao diện đăng nhập:
+![Screenshot_2-6-2024_133819_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/3e4dfb70-a25a-43d3-9e02-74154fca929e)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Giao diện trang chủ:
+![Screenshot_2-6-2024_13350_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/a94b78e5-f45b-48cc-9d20-4b3b05be67c0)
 
-## Available Scripts
+# Giao diện trang quản lý người dùng:
+![Screenshot_2-6-2024_133856_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/197e0b6a-01ce-4a5e-9ab8-39ade222f6e8)
 
-In the project directory, you can run:
+# Giao diện trang quản lý công thức
+![Screenshot_2-6-2024_133957_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/f8db15bc-3215-4380-aaa9-7cb28cd082bd)
 
-### `npm start`
+# Giao diện trang chi tiết công thức
+![Screenshot_2-6-2024_134110_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/868fa1d8-7c90-43ff-871c-0a227c72d2bd)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Giao diện trang quản lý blog:
+![Screenshot_2-6-2024_134432_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/6c20657a-8e19-41e1-b599-5a5df62cdfcc)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Giao diện trang chi tiết blog:
+![Screenshot_2-6-2024_134521_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/6cafe8fb-bed7-46f3-8cc3-3e423ec09299)
 
-### `npm test`
+# Giao diện quản lý loại món:
+![Screenshot_2-6-2024_134614_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/5626faa7-526d-4c2c-aabc-7519a1696727)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Giao diện duyệt công thức:
+![Screenshot_2-6-2024_134655_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/dca802bf-88b8-4236-bf06-a13f3d82017e)
 
-### `npm run build`
+# Giao diện chi tiết công thức đang duyệt:
+![Screenshot_2-6-2024_134737_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/cb8ffb1d-f29f-4ddb-a279-364dc55f463f)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Giao diện duyệt bài blog:
+![Screenshot_2-6-2024_134813_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/f59f98e5-bf8b-4a09-9cc6-5ede650df118)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Giao diện chi tiết bài blog đang duyệt:
+![Screenshot_2-6-2024_134912_localhost](https://github.com/LeDat2510/Admin-Cook_App/assets/166104453/8e566b8b-77e0-4920-a802-76f956099fd7)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
