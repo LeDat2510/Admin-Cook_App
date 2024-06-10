@@ -86,7 +86,7 @@ function Header() {
                         width={36}
                         className="img-circle"
                       />
-                      <span>{user.user_name}</span>{" "}
+                      <span>{user.user_name}</span>
                     </a>
                     <ul className="dropdown-menu dropdown-user">
                       <li>
